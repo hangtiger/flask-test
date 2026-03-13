@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # 3. 安装依赖（测试环境直接装 flask 即可）
-RUN pip install flask -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install flask -i https://mirrors.tencent.com/pypi/simple/
 
 # 4. 把当前目录下的代码复制到镜像里
 COPY . .
